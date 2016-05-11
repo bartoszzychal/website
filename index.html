@@ -1,35 +1,25 @@
 <!DOCTYPE html>
-<html lang="pl-PL">
+<html lang="pl-PL" ng-app="wylewki">
 <head>
-  <title>Wylewki maszynowe, betonowe, przemysłowe | Warszawa, Łódź, Tomaszów Mazowiecki</title>
+  <link rel="icon" type="image/png" href="/img/logo15p.png" />
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=10" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+  <title>Wylewki maszynowe, betonowe, przemysłowe | Warszawa, Łódź, Tomaszów Mazowiecki</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
-  <!-- <link rel="stylesheet" href="css/front.css" type="text/css"> -->
+  <link rel="stylesheet" href="css/front.css" type="text/css">
   <link rel="stylesheet" href="/lib/css/bootstrap.min.css">
   <script  type="text/javascript" src="/lib/js/jquery-2.2.3.js"></script>
   <script  type="text/javascript" src="/lib/js/bootstrap.min.js"></script>
   <script  type="text/javascript" src="/lib/js/angular.min.js"></script>
   <script  src="/angularjs/wylewki.module.js"></script>
-  <script  src="/angularjs/wylewki.directive.js"></script>
 
 </head>
-<body ng-app="wylewki">
-  <div>
-    <h1>My First Bootstrap Page</h1>
-    <p>This part is inside a .container class.</p>
-    <p>The .container class provides a responsive fixed width container.</p>
+<body >
+  <ng-include src="'/src/header.html'"></ng-include>
+  <div style="position:relative">
+      <div style="width:100%" ng-view ng-animate="{enter: 'view-enter', leave: 'view-leave'}"></div>
   </div>
-  <div footer></div>
+  <ng-include src="'/src/footer.html'"></ng-include>
 </body>
-<!-- <body ng-app="wylewki"> -->
-  <!-- <div ng-controller="MainCtrl"> -->
-    <!-- <div header></div> -->
-
-    <!-- <div footer></div> -->
-  <!-- </div> -->
-
-<!-- </body> -->
-
 </html>
