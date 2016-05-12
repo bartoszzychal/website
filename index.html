@@ -1,25 +1,33 @@
 <!DOCTYPE html>
-<html lang="pl-PL" ng-app="wylewki">
+<html lang="en" ng-app="wylewki" >
 <head>
-  <link rel="icon" type="image/png" href="/img/logo15p.png" />
-  <meta charset="UTF-8" />
-  <title>Wylewki maszynowe, betonowe, przemysłowe | Warszawa, Łódź, Tomaszów Mazowiecki</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta charset="utf-8" />
+    <meta name="author" content="Script Tutorials" />
+    <title>Responsive website using AngularJS | Script Tutorials</title>
+    <meta name="description" content="Responsive website using AngularJS - demo page">
 
-  <link rel="stylesheet" href="css/front.css" type="text/css">
-  <link rel="stylesheet" href="/lib/css/bootstrap.min.css">
-  <script  type="text/javascript" src="/lib/js/jquery-2.2.3.js"></script>
-  <script  type="text/javascript" src="/lib/js/bootstrap.min.js"></script>
-  <script  type="text/javascript" src="/lib/js/angular.min.js"></script>
-  <script  src="/angularjs/wylewki.module.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
+    <!-- add styles -->
+    <link href="css/front.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- add javascripts -->
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
 </head>
-<body >
-  <ng-include src="'/src/header.html'"></ng-include>
-  <div style="position:relative">
-      <div style="width:100%" ng-view ng-animate="{enter: 'view-enter', leave: 'view-leave'}"></div>
-  </div>
-  <ng-include src="'/src/footer.html'"></ng-include>
+<body>
+    <div ng-include="'src/header.html'"></div>
+
+    <!-- main content -->
+    <div style="position:relative">
+        <div style="width:100%" ng-view ng-animate="{enter: 'view-enter', leave: 'view-leave'}"></div>
+    </div>
+    <div ng-include="'src/footer.html'"></div>
+
 </body>
 </html>
