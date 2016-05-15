@@ -2,7 +2,7 @@
 
 'use strict';
 
-var app = angular.module('wylewki', []).
+var app = angular.module('wylewki', ['ngMap','maps']).
     config(['$routeProvider', function ($routeProvider) {
       $routeProvider.
         when('/', { templateUrl: 'src/home.html', activetab: 'home', controller: HomeCtrl }).
@@ -10,6 +10,26 @@ var app = angular.module('wylewki', []).
           templateUrl: 'src/o_nas.html',
           controller: AboutCtrl,
           activetab: 'about'
+        }).
+        when('/oferta', {
+          templateUrl: 'src/oferta.html',
+          controller: OfferCtrl,
+          activetab: 'offer'
+        }).
+        when('/realizacje', {
+          templateUrl: 'src/realizacje.html',
+          controller: RealizationsCtrl,
+          activetab: 'realizations'
+        }).
+        when('/rekomendacje', {
+          templateUrl: 'src/rekomendacje.html',
+          controller: RecommendationsCtrl,
+          activetab: 'recommendations'
+        }).
+        when('/kontakt', {
+          templateUrl: 'src/kontakt.html',
+          controller: ContactCtrl,
+          activetab: 'contact'
         }).
         otherwise({ redirectTo: '/' });
     }]).run(['$rootScope', '$http', '$browser', '$timeout', "$route", function ($scope, $http, $browser, $timeout, $route) {
