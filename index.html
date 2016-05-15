@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="wylewki" >
+<html lang="pl-PL" ng-app="wylewki" >
 <head>
     <meta charset="utf-8" />
-    <meta name="author" content="Script Tutorials" />
-    <title>Responsive website using AngularJS | Script Tutorials</title>
-    <meta name="description" content="Responsive website using AngularJS - demo page">
-
+    <title>Wylewki maszynowe, betonowe, przemysłowe | Warszawa, Łódź, Tomaszów Mazowiecki</title>
+    <meta name="description" content="WebSite for Pietrzyk Wylewki">
+    <link rel="icon" href="/img/logo15p.png">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
@@ -16,18 +15,28 @@
     <!-- add javascripts -->
     <script src="js/jquery-2.0.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
     <script src="js/angular.min.js"></script>
+    <script src="https://maps.google.com/maps/api/js"></script>
+    <script src="https://rawgit.com/allenhwkim/angularjs-google-maps/master/build/scripts/ng-map.js"></script>
+    <script src="js/maps.module.js"></script>
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
-</head>
-<body>
-    <div ng-include="'src/header.html'"></div>
 
-    <!-- main content -->
-    <div style="position:relative">
-        <div style="width:100%" ng-view ng-animate="{enter: 'view-enter', leave: 'view-leave'}"></div>
-    </div>
-    <div ng-include="'src/footer.html'"></div>
+</head>
+<body class="body">
+  <div class="row">
+    <img class="fgz_logo_pl" src="img/fgz-large-pl.png" alt="firma godna zaufania">
+    <img class="fgz_logo_en" src="img/fgz-large-en.png" alt="firma godna zaufania">
+    <a href="#!" class="thumbnail">
+     <img class="logo" src="img/logo4.png" alt="logo">
+   </a>
+  </div>
+  <div ng-include="'src/header.html'"></div>
+  <div class="relative_space">
+      <div style="width:100%" ng-view ng-animate="{enter: 'view-enter', leave: 'view-leave'}"></div>
+  </div>
+  <div ng-include="'src/footer.html'"></div>
 
 </body>
 </html>
