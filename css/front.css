@@ -1,8 +1,15 @@
 @import url("font.css");
 @import url("navbar.css");
+
+.relative-space{
+  position:relative;
+}
+
 .body{
   background-color: #ffecd9;
+  overflow: scroll;
 }
+
 .menu_logo{
  height: 100%;
  overflow: hidden;
@@ -144,4 +151,30 @@
     .logo{
       width: 450px;
     }
+}
+.view-enter,.view-leave {
+  -moz-transition:all .5s;
+  -o-transition:all .5s;
+  -webkit-transition:all .5s;
+  transition:all .5s;
+}
+.view-enter {
+  left:20px;
+  opacity:0;
+  position:absolute;
+  top:0;
+}
+.view-enter.view-enter-active {
+  left:0;
+  opacity:1;
+}
+.view-leave {
+  left:0;
+  opacity:1;
+  position:absolute;
+  top:0;
+}
+.view-leave.view-leave-active {
+  left:-20px;
+  opacity:0;
 }
