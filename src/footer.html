@@ -1,5 +1,18 @@
-<footer class="footer">
+<footer class="container footer">
   <div class="container">
-    <p class="text-muted">P.P.H.U. PIETRZYK WYLEWKI ŁAZISKO 65 tel.665 038 853 email:pietrzyk.wylewki@gmail.com</p>
+    <div class="row">
+      <div class="col-md-1">
+          <a  class="footer_link" href="#!/kontakt">Kontakt</a>
+      </div>
+      <div class="col-md-5">
+
+      </div>
+      <div class="col-md-3 vertical-center"  ng-controller="socialCntrl">
+        <a class="footer_link" href="" ng-click="redirectToFB()"><i class="fa fa-facebook"> |Zobacz nas na facebook'u!</i></a>
+      </div>
+      <div class="col-md-3 vertical-center"  ng-controller="socialCntrl">
+        <a class="footer_link" href="" ng-click="redirectToGoogle()"><i class="fa fa-google-plus"> |Sprawdz nas w google plus!</i></a>
+      </div>
+    </div>
   </div>
 </footer>

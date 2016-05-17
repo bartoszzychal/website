@@ -1,0 +1,77 @@
+
+.fgz_logo_pl{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  max-width: 175px;
+
+}
+
+.fgz_logo_en{
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  max-width: 175px;
+
+}
+
+@media (min-width: 200px) {
+    .fgz_logo_pl,.fgz_logo_en {
+        width: 40px;
+        height: auto;
+
+    }
+    .logo{
+      width: 250px;
+    }
+}
+@media (min-width: 320px) {
+    .fgz_logo_pl,.fgz_logo_en {
+        width: 60px;
+        height: auto;
+
+    }
+    .logo{
+      width: 250px;
+    }
+}
+
+@media (min-width: 544px) {
+    .fgz_logo_pl,.fgz_logo_en {
+        width: 100px;
+        height: auto;
+
+    }
+    .logo{
+      width: 300px;
+    }
+}
+=@media (min-width: 768px) {
+    .fgz_logo_pl,.fgz_logo_en {
+        width: 125px;
+        height: auto;
+    }
+    .logo{
+      width: 350px;
+    }
+}
+@media (min-width: 992px) {
+    .fgz_logo_pl,.fgz_logo_en {
+        width: 150px;
+        height: auto;
+      }
+      .logo{
+        width: 400px;
+      }
+
+}
+@media (min-width: 1200px) {
+    .fgz_logo_pl,.fgz_logo_en {
+        width: 175px;
+        height: auto;
+
+    }
+    .logo{
+      width: 450px;
+    }
+}

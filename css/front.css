@@ -1,7 +1,19 @@
 @import url("font.css");
 @import url("navbar.css");
+@import url("maps.css");
+@import url("contact.css");
+@import url("header.css");
+@import url("footer.css");
+@import url("rekomendacje.css");
 
-.relative-space{
+.fa-facebook{
+  color: #3b5998;
+}
+.fa-google-plus{
+  color: #D50F25;
+}
+
+.main-place{
   position:relative;
 }
 
@@ -10,171 +22,8 @@
   overflow: scroll;
 }
 
-.menu_logo{
- height: 100%;
- overflow: hidden;
-}
-.navbar-custom {
-    background-color:#f9c38e;
-    color:#ffffff;
-    border-radius:0;
-}
-
-.navbar-custom .navbar-nav > li > a {
-    color:#424141;
-    letter-spacing: 1px;
-    font-family: "LogoFont";
-    font-weight: bold;
-}
-.navbar-custom .icon-bar {
-  display: block;
-  width: 22px;
-  height: 2px;
-  background-color: #000000;
-  border-radius: 1px;
-}
-.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
-    color: #ffffff;
-    background-color: #ff7f00;
-}
-.navbar-custom .navbar-brand {
-    color:#424141;
-    letter-spacing: 0px;
-    font-family: "LogoFont";
-}
-
-.navbar-custom .navbar-collapse{
-  text-align: center;
-}
-
-.navbar-custom .navbar-collapse .navbar-nav{
-  margin:0;
-  float:none;
-}
-
-.maps{
-  height: 480px;
-}
-
-.maps_div{
-  position: relative;
-  margin-bottom: 15px;
-}
-.contact >p,.contact >h3{
-  font-family: "LogoFont";
-  text-align: center;
-  vertical-align: middle;
-  line-height: 45px;
-}
-.contact >h3{
-  font-weight: bold;
-  color: #ff7f00;
-}
-.contact > p{
-  font-weight: bold;
-}
-.rekomendacje{
-  width: 500px;
-  position: relative;;
-  margin-left: auto;
-  margin-right: auto;
-}
-.rekomendacje>h4{
-  text-align: center;
-  font-family: "LogoFont";
-  line-height: 45px;
-}
-
-.fgz_logo_pl{
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  max-width: 175px;
-
-}
-
-.fgz_logo_en{
-  position: absolute;
-  top: 10px;
-  left: 15px;
-  max-width: 175px;
-
-}
-
-
-@media (min-width: 200px) {
-    .fgz_logo_pl,.fgz_logo_en {
-        width: 60px;
-        height: auto;
-
-    }
-    .logo{
-      width: 250px;
-    }
-}
-
-@media (min-width: 544px) {
-    .fgz_logo_pl,.fgz_logo_en {
-        width: 100px;
-        height: auto;
-
-    }
-    .logo{
-      width: 300px;
-    }
-}
-=@media (min-width: 768px) {
-    .fgz_logo_pl,.fgz_logo_en {
-        width: 125px;
-        height: auto;
-    }
-    .logo{
-      width: 350px;
-    }
-}
-@media (min-width: 992px) {
-    .fgz_logo_pl,.fgz_logo_en {
-        width: 150px;
-        height: auto;
-      }
-      .logo{
-        width: 400px;
-      }
-
-}
-@media (min-width: 1200px) {
-    .fgz_logo_pl,.fgz_logo_en {
-        width: 175px;
-        height: auto;
-
-    }
-    .logo{
-      width: 450px;
-    }
-}
-.view-enter,.view-leave {
-  -moz-transition:all .5s;
-  -o-transition:all .5s;
-  -webkit-transition:all .5s;
-  transition:all .5s;
-}
-.view-enter {
-  left:20px;
-  opacity:0;
-  position:absolute;
-  top:0;
-}
-.view-enter.view-enter-active {
-  left:0;
-  opacity:1;
-}
-.view-leave {
-  left:0;
-  opacity:1;
-  position:absolute;
-  top:0;
-}
-.view-leave.view-leave-active {
-  left:-20px;
-  opacity:0;
+.no_place{
+  margin: 0px;
+  padding: 0px;
+  float: left;
 }

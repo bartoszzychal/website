@@ -1,0 +1,13 @@
+.contact >p,.contact >h3{
+  font-family: "LogoFont";
+  text-align: center;
+  vertical-align: middle;
+  line-height: 45px;
+}
+.contact >h3{
+  font-weight: bold;
+  color: #ff7f00;
+}
+.contact > p{
+  font-weight: bold;
+}

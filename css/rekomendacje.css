@@ -1,0 +1,11 @@
+.rekomendacje{
+  width: 500px;
+  position: relative;;
+  margin-left: auto;
+  margin-right: auto;
+}
+.rekomendacje>h4{
+  text-align: center;
+  font-family: "LogoFont";
+  line-height: 45px;
+}

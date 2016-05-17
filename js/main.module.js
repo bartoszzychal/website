@@ -2,7 +2,7 @@
 
 'use strict';
 
-var app = angular.module('wylewki', ['ngMap','maps','ngRoute','ngAnimate']).
+var app = angular.module('wylewki', ['ngMap','maps','ngRoute','ngAnimate','social']).
     config(['$routeProvider', function ($routeProvider) {
       $routeProvider.
         when('/', { templateUrl: 'src/home.html', activetab: 'home', controller: HomeCtrl }).
