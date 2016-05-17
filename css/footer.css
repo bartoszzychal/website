@@ -4,16 +4,17 @@
   margin-top: 20px;
   margin-bottom: 20px;
   height: auto;
-  line-height: inherit;
   bottom: 0px;
   width: 100%;
   border-radius: 10px;
   text-align: center;
+  text-shadow: 1px 1px 1px #ccc;
 }
 .footer_link:link,.footer_link:visited {
     background-color: #f9c38e;
     color: #424141;
     border-color:#f9c38e;
+    border-width: 0px;
     font-size: 0.9em;
     font-family: "LogoFont";
     font-weight: bold;
@@ -27,12 +28,22 @@
     background-color: #e0af7f;
     border-style: solid;
     border-radius: 5px;
-    border-width: 1px;
+    border-width: 0px;
 }
-.vcenter {
+.hvcenter {
+    align-items: center;
     display: inline-block;
     vertical-align: middle;
     float: none;
+}
+i.fa-facebook{
+  width: inherit;
+  text-shadow: 1px 1px 1px #ccc;
+  color: #3b5998;
+}
+i.fa-google-plus{
+  text-shadow: 1px 1px 1px #ccc;
+  color: #D50F25;
 }
 
 p.footer_made_by{

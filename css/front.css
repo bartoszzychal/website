@@ -6,12 +6,7 @@
 @import url("footer.css");
 @import url("rekomendacje.css");
 
-.fa-facebook{
-  color: #3b5998;
-}
-.fa-google-plus{
-  color: #D50F25;
-}
+
 
 .main-place{
   position:relative;
@@ -20,6 +15,7 @@
 .body{
   background-color: #ffecd9;
   overflow: scroll;
+  font-family: "LogoFont";
 }
 
 .no_place{

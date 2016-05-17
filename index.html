@@ -11,7 +11,7 @@
     <!-- add styles -->
     <link href="css/front.css" rel="stylesheet" type="text/css" />
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 
     <!-- add javascripts -->
     <script src="js/jquery-2.0.3.min.js"></script>
@@ -28,8 +28,9 @@
 
 </head>
 <body class="body">
-  <div class="no-place" ng-include="'src/header.html'"></div>
+  <div id="header" class="no-place" ng-include="'src/header.html'"></div>
   <div class="no-place" ng-include="'src/navbar.html'"></div>
+
   <div class="main-place">
     <div style="width:100%" ng-view ng-animate="{enter: 'view-enter', leave: 'view-leave'}"></div>
   </div>

@@ -5,48 +5,58 @@
     border-style: solid;
     border-color: #000000;
     border-top: 1px;
+    border-bottom: 1px;
 }
+
 
 .navbar-custom .navbar-nav > li > a {
     color:#424141;
     letter-spacing: 1px;
     font-family: "LogoFont";
     font-weight: bold;
+    text-shadow: 1px 1px 1px #ccc;
 }
+
 .navbar-custom .icon-bar {
   display: block;
   width: 22px;
   height: 2px;
-  background-color: #000000;
+  background-color: #ff7f00;
   border-radius: 1px;
 }
 
-.navbar-custom .navbar-nav > li > a:hover,
-.navbar-custom .navbar-nav > li > a:focus {
+.navbar-custom .navbar-left > li > a:hover,
+.navbar-custom .navbar-left > li > a:focus {
     background-color: #e0af7f;
     border-style: solid;
     border-radius: 5px;
     border-width: 0px;
 }
+
+.navbar-custom .navbar-right > li > a{
+  font-size: 1.2em;
+}
+
+.navbar-custom .navbar-right > li > a:hover .fa-facebook,
+.navbar-custom .navbar-right > li > a:focus .fa-facebook,
+.navbar-custom .navbar-right > li > a:hover .fa-google-plus,
+.navbar-custom .navbar-right > li > a:focus .fa-google-plus{
+  color:#000000;
+}
+
+
+.navbar-custom .navbar-right > li > a:hover,
+.navbar-custom .navbar-right > li > a:focus,
 .navbar-custom .navbar-right > li > a:hover,
 .navbar-custom .navbar-right > li > a:focus {
-    background-color: #3b5998;
-    border-style: solid;
-    border-radius: 5px;
-    border-width: 0px;
+  background-color:#f9c38e;
 }
-.navbar-custom .navbar-right > li > a:hover .fa-facebook,
-.navbar-custom .navbar-right > li > a:focus .fa-facebook {
-    color: #ffffff;
-}
-.navbar-custom .navbar-right > li > a:hover .fa-google-plus,
-.navbar-custom .navbar-right > li > a:focus .fa-google-plus {
-    color: #ffffff;
-}
+
 .navbar-custom .navbar-brand {
     color:#424141;
     letter-spacing: 0px;
     font-family: "LogoFont";
+    text-shadow: 1px 1px 1px #ccc;
 }
 
  .navbar-collapse{
