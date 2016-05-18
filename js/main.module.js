@@ -33,13 +33,14 @@ var app = angular.module('wylewki', ['ngMap','maps','ngRoute','ngAnimate','socia
         }).
         otherwise({ redirectTo: '/' });
     }]).run(['$rootScope', '$http', '$browser', '$timeout', "$route", function ($scope, $http, $browser, $timeout, $route) {
+      $scope.loaded = false;
       $scope.appliedClass = function(myObj) {
-      if (myObj.someValue === "true") {
-        return "special-css-class";
-      } else {
-        return "default-class"; // Or even "", which won't add any additional classes to the element
-      }
-}
+        if ($scope.loaded === "false") {
+          return "";
+        } else {
+          return "slide"; // Or even "", which won't add any additional classes to the element
+        }
+      };
         $scope.$on("$routeChangeSuccess", function (scope, next, current) {
           $scope.part = $route.current.activetab;
         });

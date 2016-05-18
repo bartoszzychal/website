@@ -23,3 +23,48 @@
   padding: 0px;
   float: left;
 }
+
+.slide {
+    position: relative;
+    left: 0;
+    width: 100%;
+    top: 100%;
+}
+.slide.ng-enter,
+.slide.ng-leave {
+    -webkit-transition: all 1s ease-ins;
+    transition: all 1s ease-in;
+}
+.slide.ng-enter {
+  top: 100%;
+  left: 100%;
+}
+.slide.ng-enter-active {
+  top: 100%;
+  left: 0;
+}
+.slide.ng-leave {
+  top: 100%;
+  left: 0;
+}
+.slide.ng-leave-active {
+  top: 100%;
+  left: -100%;
+}
+
+.fade-in {
+  -webkit-transition: 2s linear all;
+  transition: 2s linear all;
+}
+.fade-in.ng-enter {
+  opacity: 0;
+}
+.fade-in.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+.fade-in.ng-leave {
+  opacity: 1;
+}
+.fade-in.ng-leave.ng-leave-active {
+  opacity: 0;
+}
