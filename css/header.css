@@ -22,7 +22,7 @@
 
     }
     .logo{
-      width: 250px;
+      width: 150px;
     }
 }
 @media (min-width: 320px) {
@@ -32,46 +32,46 @@
 
     }
     .logo{
-      width: 250px;
+      width: 150px;
     }
 }
 
 @media (min-width: 544px) {
     .fgz_logo_pl,.fgz_logo_en {
-        width: 100px;
+        width: 75px;
         height: auto;
 
     }
     .logo{
-      width: 300px;
+      width: 200px;
     }
 }
 =@media (min-width: 768px) {
     .fgz_logo_pl,.fgz_logo_en {
-        width: 125px;
+        width: 100px;
         height: auto;
     }
     .logo{
-      width: 350px;
+      width: 250px;
     }
 }
 @media (min-width: 992px) {
     .fgz_logo_pl,.fgz_logo_en {
-        width: 150px;
+        width: 100px;
         height: auto;
       }
       .logo{
-        width: 400px;
+        width: 300px;
       }
 
 }
 @media (min-width: 1200px) {
     .fgz_logo_pl,.fgz_logo_en {
-        width: 175px;
+        width: 125px;
         height: auto;
 
     }
     .logo{
-      width: 450px;
+      width: 350px;
     }
 }

@@ -1,5 +1,4 @@
 .navbar-custom {
-    background-color:#f9c38e;
     color:#ffffff;
     border-radius:0;
     border-style: solid;
@@ -27,7 +26,7 @@
 
 .navbar-custom .navbar-left > li > a:hover,
 .navbar-custom .navbar-left > li > a:focus {
-    background-color: #e0af7f;
+    background-color: #fef2da;
     border-style: solid;
     border-radius: 5px;
     border-width: 0px;
@@ -49,7 +48,7 @@
 .navbar-custom .navbar-right > li > a:focus,
 .navbar-custom .navbar-right > li > a:hover,
 .navbar-custom .navbar-right > li > a:focus {
-  background-color:#f9c38e;
+  background-color:#EED8AE;
 }
 
 .navbar-custom .navbar-brand {
@@ -66,12 +65,14 @@
 .navbar-custom .navbar-collapse .navbar-nav{
   margin:0;
   float:none;
+  overflow: hidden;
 }
+
 .navbar_logo{
  height: 100%;
  overflow: hidden;
 }
-@media (min-width: 300px) and (max-width: 400px){
+@media (min-width:200px) and (max-width: 400px){
     .navbar_logo{
       width: 0px;
     }

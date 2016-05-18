@@ -1,6 +1,8 @@
 
 .footer{
-  background-color: #f9c38e;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-color: #EED8AE;
   margin-top: 20px;
   margin-bottom: 20px;
   height: auto;
@@ -11,7 +13,7 @@
   text-shadow: 1px 1px 1px #ccc;
 }
 .footer_link:link,.footer_link:visited {
-    background-color: #f9c38e;
+    background-color: #EED8AE;
     color: #424141;
     border-color:#f9c38e;
     border-width: 0px;
@@ -25,7 +27,8 @@
 }
 
 .footer_link:hover, .footer_link:active {
-    background-color: #e0af7f;
+    color: #000000;
+    background-color: #fef2da;
     border-style: solid;
     border-radius: 5px;
     border-width: 0px;
@@ -36,14 +39,25 @@
     vertical-align: middle;
     float: none;
 }
+
 i.fa-facebook{
   width: inherit;
   text-shadow: 1px 1px 1px #ccc;
   color: #3b5998;
 }
+i.fa-facebook:hover{
+  width: inherit;
+  text-shadow:2px 2px 2px #ccc;
+  color: #000000;
+}
 i.fa-google-plus{
   text-shadow: 1px 1px 1px #ccc;
   color: #D50F25;
+}
+i.fa-google-plus:hover{
+  width: inherit;
+  text-shadow:2px 2px 2px #ccc;
+  color: #000000;
 }
 
 p.footer_made_by{

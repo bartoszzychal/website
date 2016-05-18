@@ -25,13 +25,14 @@
     <script src="js/maps.module.js"></script>
     <script src="js/main.module.js"></script>
     <script src="js/controllers.js"></script>
-    
+    <script src="js/utils.js"></script>
+
 </head>
-<body class="body">
+<body class="body back_color">
   <div id="header" class="no-place" ng-include="'src/header.html'"></div>
   <div class="no-place" ng-include="'src/navbar.html'"></div>
   <div class="main-place">
-    <div id="main_div" ng-view ng-class="appliedClass()"></div>
+    <div id="main_div" ng-view class="slide"></div>
   </div>
   <div ng-include="'src/footer.html'"></div>
 </body>
