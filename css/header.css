@@ -46,7 +46,7 @@
       width: 200px;
     }
 }
-=@media (min-width: 768px) {
+@media (min-width: 768px) {
     .fgz_logo_pl,.fgz_logo_en {
         width: 100px;
         height: auto;
