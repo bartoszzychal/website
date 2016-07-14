@@ -1,14 +1,16 @@
 
 .footer{
+  position: fixed;
   padding-top: 2px;
   padding-bottom: 2px;
   background-color: #EED8AE;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   height: auto;
+  left: 0;
   bottom: 0px;
   width: 100%;
-  border-radius: 10px;
+  height: 28px;
+  border-radius: 5px;
   text-align: center;
   text-shadow: 1px 1px 1px #ccc;
 }
@@ -17,10 +19,10 @@
     color: #424141;
     border-color:#f9c38e;
     border-width: 0px;
-    font-size: 0.9em;
+    font-size: 0.85em;
     font-family: "LogoFont";
     font-weight: bold;
-    padding: 8px 8px;
+    padding: 4px 4px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -58,4 +60,8 @@ i.fa-google-plus:hover{
   width: inherit;
   text-shadow:2px 2px 2px #ccc;
   color: #000000;
+}
+
+#main_div{
+    padding-bottom: 28px;
 }

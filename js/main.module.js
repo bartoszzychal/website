@@ -16,7 +16,7 @@ var app = angular.module('wylewki', ['ngMap','maps','ngRoute','ngAnimate','socia
           controller: OfferCtrl,
           activetab: 'offer'
         }).
-        when('/realizacje', {
+        when('/galeria', {
           templateUrl: 'src/realizacje.html',
           controller: RealizationsCtrl,
           activetab: 'realizations'
@@ -33,7 +33,9 @@ var app = angular.module('wylewki', ['ngMap','maps','ngRoute','ngAnimate','socia
         }).
         otherwise({ redirectTo: '/' });
     }]).run(['$rootScope', '$http', '$browser', '$timeout', "$route", function ($scope, $http, $browser, $timeout, $route) {
-
+        $scope.range = function(n) {
+          return new Array(n);
+        };
         $scope.$on("$routeChangeSuccess", function (scope, next, current) {
           $scope.part = $route.current.activetab;
         });

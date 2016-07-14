@@ -6,7 +6,17 @@
 @import url("footer.css");
 @import url("rekomendacje.css");
 @import url("o_nas.css");
+@import url("gallery.css");
 
+.home{
+  display: inline-block;
+}
+.image_home{
+  width: 33%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 .navbar_color{
   background-color: #EED8AE;
@@ -14,9 +24,12 @@
 .back_color{
   background-color: #fef2da;
 }
+
 .main-place{
-  position:relative;
+    position:relative;
 }
+
+
 
 .body{
   overflow-x: hidden;
@@ -31,10 +44,11 @@
 }
 
 .slide {
-    position: relative;
-    left: 0;
+    position: absolute;
+    margin: 0 auto;
     width: 100%;
 }
+
 .slide.ng-enter,
 .slide.ng-leave {
   -o-transition: all 1s ease-in;
@@ -55,7 +69,8 @@
     left: -100%;
 }
 
-.show {opacity:0;
+.show {
+  opacity:0;
 -moz-transition: opacity 2s; /* Firefox 4 */
 -webkit-transition: opacity 2s; /* Safari and Chrome */
 -o-transition: opacity 2s;

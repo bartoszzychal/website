@@ -1,3 +1,24 @@
 <div class="container">
-  <p class="text-muted">realizacje</p>
+  <section>
+    <div class="container gal-container">
+      <div class="col-md-4 col-sm-6 co-xs-12 gal-item"  ng-repeat="a in range(8) track by $index">
+        <div class="box">
+          <a href="" data-toggle="modal" data-target="#{{$index + 1}}">
+            <img ng-src="img/realizacje/ ({{$index + 1}}).jpg">
+          </a>
+          <div class="modal fade" id="{{$index + 1}}" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <div class="modal-body">
+                  <img ng-src="img/realizacje/ ({{$index + 1}}).jpg">
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>

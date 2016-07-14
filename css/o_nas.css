@@ -1,3 +1,9 @@
+#o_nas.row>p{
+  text-indent: 10px;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+}
+
 .row-centered {
     text-align:center;
 }
