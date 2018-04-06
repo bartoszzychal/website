@@ -1,9 +1,13 @@
+.inactiveLink {
+   pointer-events: none;
+   cursor: default;
+}
 
 .fgz_logo_pl{
   position: absolute;
   top: 10px;
   right: 15px;
-  max-width: 175px;
+  max-width: 350px;
 
 }
 
@@ -11,13 +15,16 @@
   position: absolute;
   top: 10px;
   left: 15px;
-  max-width: 175px;
+  max-width: 350px;
+}
 
+.logo{
+  margin-bottom: 30px;
 }
 
 @media (min-width: 200px) {
     .fgz_logo_pl,.fgz_logo_en {
-        width: 40px;
+        width: 90px;
         height: auto;
 
     }
@@ -27,7 +34,7 @@
 }
 @media (min-width: 320px) {
     .fgz_logo_pl,.fgz_logo_en {
-        width: 60px;
+        width: 100px;
         height: auto;
 
     }
@@ -38,7 +45,7 @@
 
 @media (min-width: 544px) {
     .fgz_logo_pl,.fgz_logo_en {
-        width: 75px;
+        width: 150px;
         height: auto;
 
     }
@@ -48,7 +55,7 @@
 }
 @media (min-width: 768px) {
     .fgz_logo_pl,.fgz_logo_en {
-        width: 100px;
+        width: 200px;
         height: auto;
     }
     .logo{
@@ -57,7 +64,7 @@
 }
 @media (min-width: 992px) {
     .fgz_logo_pl,.fgz_logo_en {
-        width: 100px;
+        width: 250px;
         height: auto;
       }
       .logo{
@@ -67,7 +74,7 @@
 }
 @media (min-width: 1200px) {
     .fgz_logo_pl,.fgz_logo_en {
-        width: 125px;
+        width: 250px;
         height: auto;
 
     }

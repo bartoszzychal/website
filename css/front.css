@@ -7,22 +7,13 @@
 @import url("rekomendacje.css");
 @import url("o_nas.css");
 @import url("gallery.css");
-
-.home{
-  display: inline-block;
-}
-.image_home{
-  width: 33%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
+@import url("homeSlider.css");
 
 .navbar_color{
-  background-color: #EED8AE;
+  background-color: #585858;
 }
 .back_color{
-  background-color: #fef2da;
+  background-color: #fff;
 }
 
 .main-place{
@@ -41,6 +32,7 @@
   margin: 0px;
   padding: 0px;
   float: left;
+  margin-bottom: 30px;
 }
 
 .slide {

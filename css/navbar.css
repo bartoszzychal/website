@@ -9,24 +9,24 @@
 
 
 .navbar-custom .navbar-nav > li > a {
-    color:#424141;
+    color:#fff;
     letter-spacing: 1px;
     font-family: "LogoFont";
     font-weight: bold;
-    text-shadow: 1px 1px 1px #ccc;
+    text-shadow: 1px 1px 1px #000;
 }
 
 .navbar-custom .icon-bar {
   display: block;
   width: 22px;
   height: 2px;
-  background-color: #ff7f00;
+  background-color: #fff;
   border-radius: 1px;
 }
 
 .navbar-custom .navbar-left > li > a:hover,
 .navbar-custom .navbar-left > li > a:focus {
-    background-color: #fef2da;
+    background-color: #ccc;
     border-style: solid;
     border-radius: 5px;
     border-width: 0px;
@@ -48,7 +48,7 @@
 .navbar-custom .navbar-right > li > a:focus,
 .navbar-custom .navbar-right > li > a:hover,
 .navbar-custom .navbar-right > li > a:focus {
-  background-color:#EED8AE;
+  background-color:#ccc;
 }
 
 .navbar-custom .navbar-brand {
