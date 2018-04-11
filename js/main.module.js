@@ -3,8 +3,10 @@
 'use strict';
 
 var app = angular.module('wylewki', ['ngRoute','ngAnimate','social','slider']).
-    config(['$routeProvider', function ($routeProvider) {
-      $routeProvider.
+    config(['$routeProvider','$locationProvider', function ($routeProvider, $locationProvider) {
+	  $locationProvider.html5Mode(true);
+	  $locationProvider.hashPrefix('');
+	  $routeProvider.
         when('/', { templateUrl: 'src/home.html', activetab: 'home', controller: HomeCtrl }).
         when('/o_nas', {
           templateUrl: 'src/o_nas.html',
@@ -30,8 +32,9 @@ var app = angular.module('wylewki', ['ngRoute','ngAnimate','social','slider']).
           templateUrl: 'src/kontakt.html',
           controller: ContactCtrl,
           activetab: 'contact'
-        }).
-        otherwise({ redirectTo: '/' });
+        })
+		//.otherwise({ redirectTo: '/' })
+		;
     }]).run(['$rootScope', '$http', '$browser', '$timeout', "$route", function ($scope, $http, $browser, $timeout, $route) {
         $scope.range = function(n) {
           return new Array(n);
@@ -40,7 +43,3 @@ var app = angular.module('wylewki', ['ngRoute','ngAnimate','social','slider']).
           $scope.part = $route.current.activetab;
         });
   }]);
-
-app.config(['$locationProvider', function($location) {
-    $location.hashPrefix('!');
-}]);
