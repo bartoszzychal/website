@@ -68,3 +68,13 @@
 -o-transition: opacity 2s;
 transition: opacity 2s;
 }
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.centering {
+  align-self: center;
+}
